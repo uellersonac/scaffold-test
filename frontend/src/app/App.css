@@ -9,7 +9,7 @@
   justify-content: center;
   max-width: 1120px;
   margin: 0 auto;
-  padding: 64px 32px 24px;
+  padding: var(--spacing-16) var(--spacing-8) var(--spacing-6);
 }
 
 .welcome {
@@ -18,8 +18,8 @@
 }
 
 .eyebrow {
-  color: #5b67d8;
-  font-size: 0.8rem;
+  color: var(--color-primary);
+  font-size: var(--font-size-eyebrow);
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -27,16 +27,16 @@
 
 h1 {
   max-width: 680px;
-  margin: 20px 0;
-  font-size: clamp(2.75rem, 7vw, 5.5rem);
+  margin: var(--spacing-5) 0;
+  font-size: var(--font-size-heading);
   letter-spacing: -0.065em;
   line-height: 1.02;
 }
 
 .welcome p {
   max-width: 560px;
-  color: #5b6475;
-  font-size: 1.125rem;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-large);
   line-height: 1.7;
 }
 
@@ -45,24 +45,24 @@ h1 {
   align-items: center;
   gap: 12px;
   margin-top: 18px;
-  color: #3946be;
+  color: var(--color-link);
   font-weight: 700;
   text-decoration: none;
 }
 
 .api-link:hover {
-  color: #222d92;
+  color: var(--color-link-hover);
 }
 
 .footer {
-  padding-top: 24px;
-  border-top: 1px solid #e1e5ed;
-  color: #788194;
-  font-size: 0.875rem;
+  padding-top: var(--spacing-6);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text-subtle);
+  font-size: var(--font-size-small);
 }
 
 @media (max-width: 600px) {
   .page {
-    padding: 40px 24px 20px;
+    padding: var(--spacing-10) var(--spacing-6) var(--spacing-5);
   }
 }

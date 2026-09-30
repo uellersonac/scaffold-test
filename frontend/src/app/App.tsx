@@ -5,7 +5,7 @@ function App() {
     <main className="page">
       <section className="welcome" aria-labelledby="page-title">
         <span className="eyebrow">Frontend</span>
-        <h1 id="page-title">Seu projeto começa aqui.</h1>
+        <h1 id="page-title">Seu projeto começa aqui!</h1>
         <p>
           Esta aplicação React está pronta para evoluir e se comunicar com a
           API FastAPI do monorepo.

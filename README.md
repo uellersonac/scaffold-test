@@ -1,7 +1,7 @@
-#### Serviços de Deploy
+## Arquitetura Padrão
 - **GitHub**: para o versionamento e pipeline, é um monorepo
-- **Netlify**: para o frontend, usa somente /frontend
-- **Render**: para o backend, usa somente /backend e para o banco de dados
+- **Netlify**: para o frontend, usa somente /frontend (React)
+- **Render**: para o backend usa somente /backend (FastAPI) e para o banco de dados (PostgreSQL)
 - **Docker**: usado para rodar localmente
 - **React ↔ FastAPI**: comunicação via HTTP/HTTPS
 
@@ -14,6 +14,24 @@ GitHub →  ────┤
                  PostgreSQL
                   (Render)
 ```
+
+## Passo a Passo para novos projetos
+
+#### 1. Crie uma cópia deste repositório scaffold
+
+#### 2. Configure o Netlify
+Selecione o seu repositório do GitHub e preencha os comandos para deploy:
+
+| Campo | Valor |
+|---|---|
+|Base directory | `frontend` |
+|Build command | `npm run build` |
+|Publish directory | `dist` |
+|Functions directory | Deixe em branco |
+
+#### 3. Verifique se a página foi para o ar e teste a pipeline fazendo um commit que altera o título da página
+
+## Testes locais
 
 #### Iniciar frontend (localhost)
 
