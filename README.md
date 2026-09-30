@@ -32,7 +32,21 @@ Selecione o seu repositório do GitHub e preencha os comandos para deploy:
 #### 3. Verifique se a página foi para o ar e teste a pipeline fazendo um commit que altera o título da página
 
 
-## Desenvolver com IA!
+## Desenvolver com IA
+
+Para desenvolver com IA, use a pasta sdd. Nela há contextos importantes para o backend, frontend e gerais.
+
+Para um projeto greenfield, registrar todos os requisitos em `ai-specs\requirements.md` e modelo de dados em `ai-specs\database-model.md`. Além disso, na medida que o backend for construído, todas as rotas devem constar em `ai\specs\api-endpoints.md`. Esses documentos são a fonte de verdade e devem sempre estar atualizados.
+
+Em requirements.md haverá os requisitos com história de usuário e seus critérios de aceite usando o EARS.
+Em database-model.md haverá o mermaid com o diagrama, as colunas, tipos de dados e dicionário de dados
+Em api-endpoints são exibidos todos os endpoints e requisições possíveis.
+
+Em `implementation` haverá a pasta `backend-taks` e `frontend-tasks`. Nelas são detalhadas tasks que devem ser feitas. Sempre que o arquivo md da task tiver sido implementado deve ser indicado com um badge de "FEITO", se não, "PENDENTE"
+
+As tasks que de fato a IA pode executar estarão em: `execution-tasks` que indica como as tasks em frontend-tasks e backend-tasks devem ser feitas para entregarem juntas um incremento.
+
+A IA somente faz alterações no projeto se forem solicitadas através de .mds que estão em execution-tasks
 
 ## Rodar local
 
