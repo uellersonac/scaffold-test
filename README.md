@@ -32,7 +32,7 @@ Selecione o seu repositório do GitHub e preencha os comandos para deploy:
 #### 3. Verifique se a página foi para o ar e teste a pipeline fazendo um commit que altera o título da página
 
 
-## Desenvolver com IA
+## Desenvolver com IA!
 
 ## Rodar local
 
